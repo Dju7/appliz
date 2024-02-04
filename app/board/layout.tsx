@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import SideBar from "../components/sideBar";
+import "../globals.css";
 
 
 
@@ -8,14 +9,17 @@ export const metadata: Metadata = {
   description: "Appli for Friend Only",
 };
 
-export default function RootLayout({
+export default function BoardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body>{children}</body>
-    </html>
+    
+    <div>
+        <SideBar />
+        {children}
+    </div>
+   
   );
 }
