@@ -8,10 +8,12 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      white: "#ffff",
+      cloud: "#ffff",
       grayBlack: "#191919",
       primary:"#343434",
       secondary: '#5DEBF0',
+      alert: "#ff0000",
+      yell: "#FAF433"
 
     },
     extend: {
