@@ -1,8 +1,10 @@
 'use client'
 import { ChangeEvent, FormEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 export default function AddPost() {
+   const router = useRouter()
     const [title, setTitle] = useState ('')
     const [content, setContent] = useState('')
   
@@ -37,7 +39,7 @@ export default function AddPost() {
 
     setTitle('');
     setContent('');
-    window.location.reload();
+    router.refresh()
       
     } catch(error) {
         console.error(error)
@@ -54,7 +56,7 @@ export default function AddPost() {
         value={title} 
         onChange={handleTitleChange} 
         className=' w-72 h-8 rounded-xl p-2 border border-cloud bg-primary text-secondary placeholder:font-bold placeholder:text-center placeholder:text-secondary' 
-        placeholder='TITLE'
+        placeholder='CHOOSE TITLE...'
         />
         </div>
         <div className="flex w-[65%] flex-col justify-center items-center ">

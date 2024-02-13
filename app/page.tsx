@@ -33,12 +33,12 @@ export default function Home() {
 
   return (
     <main className="h-screen w-full flex justify-center items-center">
-      <section className="w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden shadow-lg shadow-secondary">
+      <section className="w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden shadow-lg shadow-tertiary">
         <div className="h-[50%] lg:h-full w-full lg:w-[50%] relative overflow-hidden ">
-          <Image  src='/connect.jpg' alt='image de connection' fill object-fit="cover"/>
+          <Image  src='/connect.png' alt='image de connection' fill object-fit="cover"/>
         </div>
         <div className="h-[50%] lg:h-full w-full lg:w-[50%] flex flex-col justify-center items-center text-secondary">
-        <h2 className="text-3xl">APPLIZ'AMI</h2>
+        <h2 className="text-3xl text-tertiary">APPLIZ'AMI</h2>
         {error && (
                 <p className="text-alert text-center text-white rounded-xl">{error}</p>
               )}
@@ -54,14 +54,14 @@ export default function Home() {
           name="username" type="username"  
           placeholder="john Doe"
           onChange={(e) => { setData({ ...data, username: e.target.value }) }} 
-          className="w-[80%] p-1 text-cloud font-bold bg-secondary"
+          className="w-[80%] p-1 text-cloud font-bold bg-tertiary placeholder:text-grayBlack"
           />
          
           <label>
             PASSWORD
           </label>
           <input 
-          className="w-[80%] p-1 text-cloud font-bold bg-secondary"
+          className="w-[80%] p-1 text-cloud font-bold bg-tertiary placeholder:text-grayBlack"
           id="password" 
           name="password" 
           type="password" 

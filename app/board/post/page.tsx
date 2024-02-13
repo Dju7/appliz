@@ -17,6 +17,7 @@ async function getPosts() {
 }
 
  async function Post() {
+  
   const posts = await getPosts();
  
   
@@ -28,11 +29,8 @@ async function getPosts() {
             <h1 className='text-6xl mt-6'>POST-IT</h1>
          </div>
          
-         <div className=' w-[99%] h-[90%] flex flex-col justify-center items-center gap-2 bg-grayBlack rounded-xl'>
-            <div className='flex justify-center items-center w-full h-[30%]'>
-              <AddPost />
-            </div>
-          <div className='w-[95%] h-[90%] grid grid-cols-5 p-4 gap-8 '>
+         <div className=' w-[99%] h-[70%] flex flex-col justify-center items-center gap-2 bg-grayBlack rounded-xl'> 
+            <div className='w-[95%] h-[90%] grid grid-cols-5 p-4 gap-8 '>
           {
             (posts).map((post) => {
               return (
@@ -48,9 +46,13 @@ async function getPosts() {
               )
             })
           }
-
+            </div>
           </div>
-        </div>
+          <div className=' w-[99%] h-[30%] flex flex-col justify-center items-center gap-2 bg-grayBlack rounded-xl'>
+            <div className='flex justify-center items-center w-full h-[30%]'>
+              <AddPost />
+            </div>
+          </div>
       </section>
     </div>
    )

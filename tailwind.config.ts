@@ -12,6 +12,7 @@ const config: Config = {
       grayBlack: "#191919",
       primary:"#343434",
       secondary: '#5DEBF0',
+      tertiary: "#F9338D",
       alert: "#ff0000",
       yell: "#FAF433"
 
