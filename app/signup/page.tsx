@@ -34,7 +34,7 @@ function Signup() {
 
     return (
         <main className="h-screen w-full flex justify-center items-center">
-          <section className="w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden">
+          <section className="w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden shadow-lg shadow-secondary">
             <div className="h-[50%] lg:h-full w-full lg:w-[50%] relative overflow-hidden">
               <Image src='/signup.jpg' alt='image de connection' fill object-fit="cover"/>
             </div>
@@ -48,7 +48,7 @@ function Signup() {
                Your E-mail
               </label>
               <input
-              className="w-[80%] text-primary p-1"
+              className="w-[80%] text-primary p-1 bg-secondary"
               type="email"
               id="email"
               name="email"
@@ -58,7 +58,7 @@ function Signup() {
                Choose username
               </label>
               <input 
-              className="w-[80%] text-primary p-1"
+              className="w-[80%] text-primary p-1 bg-secondary"
               type="username"
               id="username"
               name="username"
@@ -69,13 +69,13 @@ function Signup() {
                 Choose password
               </label>
               <input 
-              className="w-[80%] text-primary p-1"
+              className="w-[80%] text-primary p-1 bg-secondary"
               type="password"
               id="password"
               name="password"
               onChange={(e) => { setData({ ...data, password: e.target.value }) }}
               />
-              <button type="submit" className="mt-10 h-12 w-36 border rounded-xl hover:bg-white hover:text-primary ">SE CONNECTER</button>
+              <button type="submit" className="mt-10 h-12 w-36 border rounded-xl hover:bg-secondary hover:text-grayBlack ">SE CONNECTER</button>
             </form>
             </div>
           </section>

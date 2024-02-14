@@ -49,8 +49,8 @@ export default async function Board() {
           </div>
 
         </div>
-        <div className='h-full w-[60%] flex flex-col items-center overflow-scoll border border-secondary bg-grayBlack p-6 rounded-xl'>
-          <h2 className='text-secondary text-3xl mb-4'>~ DAILY NEWS ~</h2>
+        <div className='h-full w-[60%] flex flex-col items-center overflow-scoll border border-secondary bg-grayBlack p-4 rounded-xl'>
+          <h2 className='text-secondary text-3xl mb-2'>~ DAILY NEWS ~</h2>
           <article className='grid grid-cols-2 gap-4'>
         {Array.isArray(NewsData?.data)  ? (
            NewsData.data.map((news) => (

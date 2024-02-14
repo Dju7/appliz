@@ -55,7 +55,7 @@ export default function AddPost() {
         id="title" 
         value={title} 
         onChange={handleTitleChange} 
-        className=' w-72 h-8 rounded-xl p-2 border border-cloud bg-primary text-secondary placeholder:font-bold placeholder:text-center placeholder:text-secondary' 
+        className=' w-72 h-10 rounded-xl p-2  text-secondary bg-grayBlack  placeholder:font-bold placeholder:text-center placeholder:text-secondary' 
         placeholder='CHOOSE TITLE...'
         />
         </div>
@@ -65,11 +65,11 @@ export default function AddPost() {
         id="content"
         value={content}
         onChange={handleContentChange}
-        className='mb-6 w-[90%] rounded-xl h-[150px] border border-cloud p-2 text-secondary bg-primary mt-4 placeholder:font-bold placeholder:text-center placeholder:text-secondary' 
+        className='mb-6 w-[90%] rounded-xl h-[150px] p-2 text-secondary bg-grayBlack mt-4 placeholder:font-bold placeholder:text-center placeholder:text-secondary' 
         placeholder='Write your note here...'/>
         </div>
         <div className="w-[10%] h-full flex justify-center items-center">
-        <button type="submit" className='h-20 w-24 bg-secondary font-bold rounded-xl text-primary p-2 shadow-lg hover:shadow-cloud hover:text-cloud '>FEED</button>
+        <button type="submit" className='h-20 w-24 bg-secondary font-bold rounded-xl text-primary p-2 shadow-lg hover:shadow-tertiary hover:text-cloud '>FEED</button>
         </div>
   </form>
   )

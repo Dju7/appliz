@@ -14,7 +14,7 @@ interface NewsProps {
 const NewsCard: React.FC<NewsProps> = ({ title, img, source, description, url, author }) => {
     return (
       <a href={url} target="_blank">
-      <div className='h-[220px] w-[400px] flex  text-secondary p-2  bg-primary hover:bg-grayBlack rounded-xl'>
+      <div className='h-[230px] w-[400px] flex  text-secondary p-2  bg-primary hover:bg-grayBlack rounded-xl'>
         <div className='h-[90%] w-[30%] flex flex-col m-2 overflow-hidden'>
           <h3 className='text-2xl mb-2'>{source}</h3> 
           {img && <Image alt='pictures of article' src={img} height={100} width={120} />}

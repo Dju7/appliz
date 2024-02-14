@@ -29,7 +29,7 @@ async function getPosts() {
             <h1 className='text-6xl mt-6'>POST-IT</h1>
          </div>
          
-         <div className=' w-[99%] h-[70%] flex flex-col justify-center items-center gap-2 bg-grayBlack rounded-xl'> 
+         <div className=' w-[99%] h-[75%] flex flex-col justify-center items-center gap-2 border-2 border-secondary bg-grayBlack rounded-xl'> 
             <div className='w-[95%] h-[90%] grid grid-cols-5 p-4 gap-8 '>
           {
             (posts).map((post) => {
@@ -48,7 +48,7 @@ async function getPosts() {
           }
             </div>
           </div>
-          <div className=' w-[99%] h-[30%] flex flex-col justify-center items-center gap-2 bg-grayBlack rounded-xl'>
+          <div className=' w-[99%] h-[25%] flex flex-col justify-center items-center gap-2 border-4 border-secondary shadow-xl shadow-grayBlack rounded-xl'>
             <div className='flex justify-center items-center w-full h-[30%]'>
               <AddPost />
             </div>
