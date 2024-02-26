@@ -9,7 +9,7 @@ export default function Calendar() {
       <div className='w-full h-20'>
         <h1 className='text-6xl mt-6'>CALENDAR</h1>
       </div >
-      <div className='w-[97%] h-[83%] mt-10 bg-grayBlack text-cloud ' >
+      <div className='w-[97%] h-[84%] p-1 mt-10 bg-grayBlack text-cloud ' >
        <CalendarComponent />
 
       </div>

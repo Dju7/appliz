@@ -4,6 +4,7 @@ import CardPost from '@/app/components/cardpost'
 import AddPost from '@/app/components/addPost'
 import Link from 'next/link'
 
+
 async function getPosts() {
   const posts = await db.post.findMany({
     where: {published: true},
@@ -22,14 +23,14 @@ async function getPosts() {
  
   
     return (
-    <div className='w-full h-screen bg-primary flex justify-end'>
-      <section className='w-[80%] h-full p-4 flex flex-col gap-4'>
+    <div className=' w-full h-screen bg-primary flex justify-end'>
+      <section className=' w-[80%] h-full p-4 flex flex-col gap-4'>
       
          <div className='w-full h-20'>
             <h1 className='text-6xl mt-6'>POST-IT</h1>
          </div>
          
-         <div className=' w-[99%] h-[75%] flex flex-col justify-center items-center gap-2 border-2 border-secondary bg-grayBlack rounded-xl'> 
+         <div className=' w-[99%] h-[75%] flex flex-col justify-center items-center gap-2 border-2 border-secondary bg-grayBlack/50 rounded-xl'> 
             <div className='w-[95%] h-[90%] grid grid-cols-5 p-4 gap-8 '>
           {
             (posts).map((post) => {

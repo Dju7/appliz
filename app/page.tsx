@@ -33,11 +33,11 @@ export default function Home() {
 
   return (
     <main className="h-screen w-full flex justify-center items-center">
-      <section className="w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden shadow-lg shadow-secondary">
-        <div className="h-[50%] lg:h-full w-full lg:w-[50%] relative overflow-hidden ">
-          <Image  src='/connect.png' alt='image de connection' fill object-fit="cover"/>
+      <section className=" w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden shadow-lg shadow-secondary">
+        <div className=" relative h-[50%] lg:h-full w-full lg:w-[60%]  overflow-hidden ">
+          <Image  src='/connect.png' alt='image de connection' fill object-fit="cover" className="absolute top-0"/>
         </div>
-        <div className="h-[50%] lg:h-full w-full lg:w-[50%] flex flex-col justify-center items-center">
+        <div className="h-[50%] lg:h-full w-full lg:w-[40%] flex flex-col justify-center items-center">
         <h2 className="text-3xl text-cloud font-bold">APPLIZ'AMI</h2>
         {error && (
                 <p className="text-alert text-center text-white rounded-xl">{error}</p>

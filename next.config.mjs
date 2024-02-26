@@ -1,7 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 images: {
-    domains: ['image.tmdb.org', 'www.lepoint.fr'],
+  remotePatterns: [
+    {
+      protocol: 'https',
+      hostname: 'image.tmdb.org',
+      
+    },
+    {
+      protocol: 'https',
+      hostname: 'www.lepoint.fr',
+      
+    },
+  ],
   },
+  
 };
 export default nextConfig;
+

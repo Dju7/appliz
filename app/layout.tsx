@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Provider from '@/provider/provider'
 import "./globals.css";
 
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <Provider>
       <body>{children}</body>
+      </Provider>
     </html>
   );
 }

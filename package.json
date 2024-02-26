@@ -16,6 +16,7 @@
     "@fullcalendar/react": "^6.1.10",
     "@fullcalendar/timegrid": "^6.1.10",
     "@prisma/client": "^5.9.1",
+    "@types/socket.io": "^3.0.2",
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.1",
     "fullcalendar": "^6.1.10",
@@ -24,6 +25,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4",
     "uninstall": "^0.0.0"
   },
   "devDependencies": {
