@@ -24,7 +24,7 @@ export default function DeleteButton({ PostId }: any) {
 
     return (
         <button
-            className="text-4xl text-cloud"
+            className="text-4xl font-bold bg-tertiary text-cloud p-2 rounded-xl mr-6 hover:bg-alert"
             onClick={handleClick}
         >
             X
