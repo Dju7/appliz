@@ -55,7 +55,7 @@ export default function AddPost() {
         id="title" 
         value={title} 
         onChange={handleTitleChange} 
-        className=' w-72 h-10 rounded-xl p-2  text-secondary bg-grayBlack  placeholder:font-bold placeholder:text-center placeholder:text-secondary' 
+        className=' w-[80%] h-10 rounded-xl p-2  text-secondary bg-grayBlack  placeholder:font-bold placeholder:text-center placeholder:text-secondary' 
         placeholder='CHOOSE TITLE...'
         />
         </div>
@@ -69,7 +69,7 @@ export default function AddPost() {
         placeholder='Write your note here...'/>
         </div>
         <div className="w-[10%] h-full flex justify-center items-center">
-        <button type="submit" className='h-20 w-24 bg-secondary font-bold rounded-xl text-primary p-2 shadow-lg hover:shadow-tertiary hover:text-cloud '>FEED</button>
+        <button type="submit" className='h-20 w-24 bg-secondary font-bold rounded-xl text-primary p-2 shadow-lg hover:shadow-yell hover:text-yell '>FEED</button>
         </div>
   </form>
   )

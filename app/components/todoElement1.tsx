@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
-
+import Image from 'next/image';
 import {useState, useEffect} from 'react'
+
 
 interface TodoItem {
   id: number;
@@ -42,13 +43,15 @@ function TodoElement1() {
   
     return (
       <section className='w-[50%] h-[800px] flex justify-center items-center mt-4'>
-        <div className='w-full h-[95%] bg-grayBlack shadow-2xl rounded-xl border border-secondary'>
-          <div className='w-full h-36 flex flex-col justify-center items-center gap-2 mt-4'>
+       
+        <div className=' w-full h-[95%] bg-grayBlack shadow-2xl rounded-xl border border-secondary'>
+        
+          <div className=' w-full h-36 flex flex-col justify-center items-center gap-2 mt-4'>
           <h2 className='text-3xl'>LIST TWO</h2>
             <input 
             type="text" 
             placeholder="Enter a task" 
-            className='w-[400px] text-grayBlack h-10 p-2 mt-2 rounded-xl'
+            className='w-[70%] text-grayBlack h-10 p-2 mt-2 rounded-xl'
             value={newItem || ''}
             onChange={(e) => setNewItem(e.target.value)}
             />
@@ -57,10 +60,10 @@ function TodoElement1() {
             onClick={() => addItem()}
             >Add Task</button>
           </div>
-          <div className='flex flex-col justify-center items-center h-auto w-full '>
-          <ul className="mt-6 text-white">
+          <div className=' flex flex-col justify-center items-center h-auto w-full '>
+          <ul className="mt-6 text-white w-full flex justify-center items-center">
             {items.map((item) => (
-              <li key={item.id} className=' w-[700px] p-2 flex justify-between bg-primary text-xl text-secondary shadow-xl mt-4 rounded-xl'>
+              <li key={item.id} className=' w-[90%] p-2 flex justify-between bg-primary text-xl text-secondary shadow-xl mt-4 rounded-xl'>
                 {item.value}{" "}
                 <button
                   className="ml-5 cursor-pointer bg-secondary text-2xl text-grayBlack px-2 rounded-xl"

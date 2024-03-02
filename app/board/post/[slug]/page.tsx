@@ -29,7 +29,6 @@ const page: FC<pageProps> = async({ params }) => {
     try {
         const reponse = await GET(null, { params });
         data = await reponse.json()
-        console.log(data)
 
     } catch (error) {
         console.error('Une erreur s\'est produite :', error);
@@ -37,7 +36,7 @@ const page: FC<pageProps> = async({ params }) => {
     return (
         <div className="h-screen w-full flex justify-end ">
             <section className='relative w-[80%] h-full p-4 flex flex-col gap-10'>
-            <Image src="/postit.png" alt="image de fond" height={700} width={700} className=' absolute bottom-[13px] right-0 opacity-50' />
+            <Image src="/postit.png" alt="image de fond" height={600} width={600} className=' absolute bottom-[13px] right-0 opacity-50' />
               <div className=' z-10 w-full h-20 flex justify-between items-center'>
                 <h1 className='text-6xl mt-6 text-secondary'>{data.title}</h1>
                 <DeleteButton PostId={params.slug} />

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,8 @@
 .inShaddow {
   box-shadow: inset 1rem 0.2rem 4rem #4e4e4e;
 }
+
+
 
 @layer base {
   body {

@@ -3,6 +3,7 @@ import { db } from '@/lib/db'
 import CardPost from '@/app/components/cardpost'
 import AddPost from '@/app/components/addPost'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 async function getPosts() {
@@ -30,8 +31,10 @@ async function getPosts() {
             <h1 className='text-6xl mt-6'>POST-IT</h1>
          </div>
          
-         <div className=' w-[99%] h-[75%] flex flex-col justify-center items-center gap-2 border-2 border-secondary bg-grayBlack/50 rounded-xl'> 
-            <div className='w-[95%] h-[90%] grid grid-cols-5 p-4 gap-8 '>
+         <div className='relative z-10 w-[99%] h-[75%] flex flex-col justify-center items-center gap-2 border-2 border-secondary bg-grayBlack/50 rounded-xl'> 
+         <Image src="/fond3.png" alt="image de fond" height={700} width={700} className='right-0 absolute opacity-20' />
+
+            <div className='z-20 w-[95%] h-[90%] grid grid-cols-5 p-4 gap-8 '>
           {
             (posts).map((post) => {
               return (

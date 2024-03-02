@@ -69,6 +69,7 @@ function Calendar() {
         end: event.end,
         allDay: event.allDay,
       } as EventInput))}
+      
       selectable={true}
       editable={true}
       select={handleDateSelect}

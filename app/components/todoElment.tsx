@@ -48,7 +48,7 @@ function TodoElement() {
             <input 
             type="text" 
             placeholder="Enter a task" 
-            className='w-[400px] text-grayBlack h-10 p-2 mt-2 rounded-xl'
+            className='w-[70%] text-grayBlack h-10 p-2 mt-2 rounded-xl'
             value={newItem || ''}
             onChange={(e) => setNewItem(e.target.value)}
             />
@@ -58,9 +58,9 @@ function TodoElement() {
             >Add Task</button>
           </div>
           <div className='flex flex-col justify-center items-center h-auto w-full '>
-          <ul className="mt-6 text-white">
+          <ul className="mt-6 text-white w-full flex justify-center items-center">
             {items.map((item) => (
-              <li key={item.id} className=' w-[650px] p-2 flex justify-between items-center bg-primary text-2xl mt-4 text-secondary rounded-xl'>
+              <li key={item.id} className=' w-[90%] p-2 flex justify-between items-center bg-primary text-2xl mt-4 text-secondary rounded-xl'>
                 {item.value}{" "}
                 <button
                   className="ml-5 cursor-pointer bg-secondary text-2xl text-grayBlack px-2 rounded-xl"

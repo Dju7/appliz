@@ -16,7 +16,7 @@ export default async function UpComingMovies() {
 
    return (
     <main className=" h-screen w-full flex  flex-col bg-grayBlack">
-     <section className="w-full h-full grid grid-cols-5 py-4 gap-2 px-4">
+     <section className="w-full h-full grid grid-cols-4 xl:grid-cols-5 py-4 gap-2 px-4">
       {movies.map((movie: { id: Key | null | undefined; poster_path: any; title: string; })=> (
         
         <Link key={movie.id} href={`http://localhost:3000/board/movie/${movie.id}`}>
