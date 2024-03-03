@@ -32,7 +32,7 @@ export default function Search() {
       </label>
       <input
         type="search"
-        className="text-grayBlack w-72 mb-2 h-8 p-4 rounded-xl"
+        className="text-grayBlack w-[70%] mb-2 h-8 p-4 rounded-xl"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />

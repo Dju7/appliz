@@ -16,6 +16,7 @@ const Page: FC<PageProps> = async ({ params }) => {
     }
 
     const movieData = await movieDetail.json();
+    
 
     return (
     <section className=" w-full h-screen bg-primary flex justify-end">
