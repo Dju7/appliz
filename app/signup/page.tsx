@@ -34,21 +34,18 @@ function Signup() {
 
     return (
         <main className="h-screen w-full flex justify-center items-center">
-          <section className="w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden shadow-lg shadow-secondary">
-            <div className="h-[50%] lg:h-full w-full lg:w-[50%] relative overflow-hidden">
-              <Image src='/signup.jpg' alt='image de connection' fill object-fit="cover"/>
-            </div>
-            <div className="h-[50%] lg:h-full w-full lg:w-[50%] flex flex-col justify-center items-center">
-            <h2 className="text-3xl">Create Account</h2>
+          <section className="w-[30%] h-[60%] bg-secondary flex flex-col lg:flex-row justify-center items-center rounded-full overflow-hidden">
+            <div className="h-[50%] lg:h-full w-full lg:w-[70%] flex flex-col justify-center items-center mt-6">
+            <h2 className="text-4xl font-bold">Create Account</h2>
             <form 
-            className="flex flex-col justify-center items-center gap-4 w-[80%] h-[80%]"
+            className="flex flex-col justify-center items-center gap-4 w-full h-[80%] font-bold text-xl"
             onSubmit={createUser} method="POST"
             >
-            <label>
+            <label className='mt-4'>
                Your E-mail
               </label>
               <input
-              className="w-[80%] text-primary p-1 bg-secondary"
+              className="w-full text-grayBlack p-1 bg-cloud"
               type="email"
               id="email"
               name="email"
@@ -58,7 +55,7 @@ function Signup() {
                Choose username
               </label>
               <input 
-              className="w-[80%] text-primary p-1 bg-secondary"
+              className="w-full text-grayBlack p-1 bg-cloud"
               type="username"
               id="username"
               name="username"
@@ -69,13 +66,13 @@ function Signup() {
                 Choose password
               </label>
               <input 
-              className="w-[80%] text-primary p-1 bg-secondary"
+              className="w-full text-primary p-1 bg-secondary"
               type="password"
               id="password"
               name="password"
               onChange={(e) => { setData({ ...data, password: e.target.value }) }}
               />
-              <button type="submit" className="mt-10 h-12 w-36 border rounded-xl hover:bg-secondary hover:text-grayBlack ">SE CONNECTER</button>
+              <button type="submit" className="mt-6 h-12 w-36 bg-cloud text-grayBlack rounded-xl hover:text-secondary ">CREATE</button>
             </form>
             </div>
           </section>

@@ -25,7 +25,10 @@ providers: [
       }
     
       const existingUser = await db.user.findFirst ({
-        where: {username: credentials?.username}
+        where: {username: credentials?.username},
+        include: {
+          posts: true, // Inclure directement les posts dans la requête
+        },
       });
       if (!existingUser) {
         throw new Error('No user found')
@@ -40,7 +43,8 @@ providers: [
       return {
         id:  `${existingUser.id}`,
         username: existingUser.username,
-        email: existingUser.email
+        email: existingUser.email,
+        posts: existingUser.posts || [],
       }
     }
   })
@@ -57,7 +61,8 @@ callbacks: {
     if (user) {
       return {
         ...token,
-        username: user.username
+        username: user.username,
+        posts: user.posts || [],
       };
     }
     return token
@@ -67,7 +72,8 @@ callbacks: {
       ...session,
       user: {
         ...session.user,
-        username: token.username
+        username: token.username,
+        posts: token.posts || [],
       }
     };
   },

@@ -19,7 +19,7 @@ async function Welcome() {
     <p className='text-4xl text-scondary border p-2 bg-primary '> {totalDate}</p>
       <h3 className='text-4xl text- mt-6 font-welcome animate-pulse'>~ B I E N V E N U E ~</h3>
       <div className='mt-6 flex justify-center items-center gap-10'>
-      <p className='text-4xl mt-16'>{session?.user.username || "Nobody"}</p>
+      <p className='text-4xl mt-16'>{session?.user.username || "Visitor"}</p>
       <TfiThemifyFaviconAlt className='text-9xl' />
       </div>
       

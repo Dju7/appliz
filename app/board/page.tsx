@@ -29,7 +29,7 @@ export default async function Board() {
 
   let NewsData: NewsData | null = null;
   try {
-    const response = await fetch(`http://api.mediastack.com/v1/news?access_key=${process.env.MEDIA_KEY}&countries=fr&sources=lepoint&limit=6`, { next: { revalidate: 360000 } });
+    const response = await fetch(`http://api.mediastack.com/v1/news?access_key=${process.env.MEDIA_KEY}&countries=fr&sources=lepoint&limit=6`, { next: { revalidate: 3600000 } });
      NewsData = await response.json();
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -59,7 +59,7 @@ export default async function Board() {
 
         </div>
         </div>
-        <div className='h-[790px] w-[60%] flex flex-col items-center overflow-scoll border border-secondary bg-grayBlack/70 p-4 rounded-xl'>
+        <div className='h-[800px] w-[60%] flex flex-col items-center overflow-scoll border border-secondary bg-grayBlack/70 p-4 rounded-xl'>
           <h2 className='text-secondary text-3xl mb-2'>~ DAILY NEWS ~</h2>
           <article className=' h-auto grid grid-cols-1 xl:grid-cols-2 gap-4 overflow-auto'>
         {Array.isArray(NewsData?.data)  ? (

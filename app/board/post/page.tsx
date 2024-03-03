@@ -31,9 +31,8 @@ async function getPosts() {
             <h1 className='text-6xl mt-6'>POST-IT</h1>
          </div>
          
-         <div className='relative z-10 w-[99%] h-[75%] flex flex-col justify-center items-center gap-2 border-2 border-secondary bg-grayBlack/50 rounded-xl'> 
-         <Image src="/fond3.png" alt="image de fond" height={700} width={700} className='right-0 absolute opacity-20' />
-
+         <div className='relative w-[99%] h-[75%] flex flex-col justify-center items-center gap-2 border-2 border-secondary bg-grayBlack/50 rounded-xl overflow-hidden'> 
+            <Image src='/fond3.png' alt='image de fond' height={600} width={800} className='absolute opacity-30 right-0' />
             <div className='z-20 w-[95%] h-[90%] grid grid-cols-5 p-4 gap-8 '>
           {
             (posts).map((post) => {

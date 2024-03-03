@@ -33,20 +33,18 @@ export default function Home() {
 
   return (
     <main className="h-screen w-full flex justify-center items-center">
-      <section className=" w-[60%] h-[60%] bg-primary flex flex-col lg:flex-row justify-center items-center rounded-2xl overflow-hidden shadow-lg shadow-secondary">
-        <div className=" relative h-[50%] lg:h-full w-full lg:w-[60%]  overflow-hidden ">
-          <Image  src='/connect.png' alt='image de connection' fill object-fit="cover" className="absolute top-0"/>
-        </div>
-        <div className="h-[50%] lg:h-full w-full lg:w-[40%] flex flex-col justify-center items-center">
-        <h2 className="text-3xl text-cloud font-bold">APPLIZ'AMI</h2>
+      <Image src="/cat.png" alt="image de chat" height={500} width={500} />
+      <section className=" w-[30%] h-[60%] bg-cloud flex flex-col lg:flex-row justify-center items-center rounded-full overflow-hidden">  
+        <div className="h-[50%] lg:h-full w-full lg:w-[70%] flex flex-col justify-center items-center">
+        <h2 className="text-3xl text-grayBlack font-bold mt-4">CAT'ZAMI</h2>
         {error && (
-                <p className="text-alert text-center text-white rounded-xl">{error}</p>
+                <p className="text-alert text-center rounded-xl">{error}</p>
               )}
         <form 
-        className="flex flex-col justify-center items-center gap-4 w-[80%] h-[80%] "
+        className="flex flex-col justify-center items-center gap-4 w-full h-[80%] "
         onSubmit={loginUser} method="POST"
         >
-          <label className="text-cloud">
+          <label className="text-grayBlack">
            LOGIN
           </label>
           <input 
@@ -54,23 +52,23 @@ export default function Home() {
           name="username" type="username"  
           placeholder="john Doe"
           onChange={(e) => { setData({ ...data, username: e.target.value }) }} 
-          className="w-[80%] p-1 text-cloud font-bold bg-secondary placeholder:text-grayBlack"
+          className="w-full p-1 text-grayBlack font-bold bg-secondary placeholder:text-grayBlack"
           />
          
-          <label className="text-cloud">
+          <label className="text-grayBlack">
             PASSWORD
           </label>
           <input 
-          className="w-[80%] p-1 text-cloud font-bold bg-secondary placeholder:text-grayBlack"
+          className="w-full p-1 text-grayBlack font-bold bg-secondary placeholder:text-grayBlack"
           id="password" 
           name="password" 
           type="password" 
           placeholder="password" 
           onChange={(e) => { setData({ ...data, password: e.target.value }) }}
           />
-          <button type="submit" className="mt-10 h-12 w-36 border text-cloud rounded-xl hover:bg-secondary hover:text-primary ">SE CONNECTER</button>
+          <button type="submit" className="mt-8 h-12 w-36 text-primary rounded-xl bg-secondary hover:bg-grayBlack hover:text-cloud ">SE CONNECTER</button>
         </form>
-        <Link className="mb-4" href="/signup">S'inscrire</Link>
+        <Link className="mb-4 text-grayBlack text-2xl" href="/signup">Subscribe ?</Link>
         <Link href="/board">Board</Link>
         </div>
       </section>
