@@ -19,7 +19,7 @@ export default async function UpComingMovies() {
      <div className="w-full h-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-4 gap-2 px-4">
       {movies.map((movie: { id: Key | null | undefined; poster_path: any; title: string; })=> (
         
-        <Link key={movie.id} href={`https://catzami-one.vercel.app/board/movie/${movie.id}`}>
+        <Link key={movie.id} href={`https://catzami-peach.vercel.app/board/movie/${movie.id}`}>
         <Image key={movie.id}
          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
          alt={movie.title}
