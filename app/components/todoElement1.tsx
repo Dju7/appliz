@@ -60,8 +60,8 @@ function TodoElement1() {
             onClick={() => addItem()}
             >Add Task</button>
           </div>
-          <div className=' flex flex-col justify-center items-center h-auto w-full '>
-          <ul className="mt-6 text-white w-full flex justify-center items-center">
+          <div className='flex flex-col justify-center items-center h-auto w-full '>
+          <ul className="mt-6 text-white w-full flex flex-col justify-center items-center">
             {items.map((item) => (
               <li key={item.id} className=' w-[90%] p-2 flex justify-between bg-primary text-xl text-secondary shadow-xl mt-4 rounded-xl'>
                 {item.value}{" "}
