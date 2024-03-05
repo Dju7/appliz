@@ -41,10 +41,10 @@ export default function Home() {
                 <p className="mt-4 text-alert text-center rounded-xl">{error}</p>
               )}
         <form 
-        className="flex flex-col justify-center items-center gap-4 w-full h-[80%] "
+        className="flex flex-col justify-center items-center gap-4 w-full h-[70%] "
         onSubmit={loginUser} method="POST"
         >
-          <label className="text-grayBlack">
+          <label className="text-grayBlack font-bold">
            LOGIN
           </label>
           <input 
@@ -52,26 +52,28 @@ export default function Home() {
           name="username" type="username"  
           placeholder="john Doe"
           onChange={(e) => { setData({ ...data, username: e.target.value }) }} 
-          className="w-full p-1 text-grayBlack font-bold bg-secondary placeholder:text-grayBlack"
+          className="w-full p-1 text-grayBlack  bg-secondary placeholder:text-grayBlack"
           />
          
-          <label className="text-grayBlack">
+          <label className="text-grayBlack font-bold">
             PASSWORD
           </label>
           <input 
-          className="w-full p-1 text-grayBlack font-bold bg-secondary placeholder:text-grayBlack"
+          className="w-full p-1 text-grayBlack  bg-secondary placeholder:text-grayBlack"
           id="password" 
           name="password" 
           type="password" 
           placeholder="password" 
           onChange={(e) => { setData({ ...data, password: e.target.value }) }}
           />
-          <button type="submit" className="mt-8 h-12 w-36 text-primary rounded-xl bg-secondary hover:bg-grayBlack hover:text-cloud ">SE CONNECTER</button>
+          <button type="submit" className="mt-8 h-12 w-36 text-primary font-bold rounded-xl bg-secondary hover:bg-grayBlack hover:text-cloud ">SE CONNECTER</button>
         </form>
-        <Link className="mb-4 text-grayBlack text-2xl" href="/signup">Subscribe ?</Link>
-        <Link href="/board">Board</Link>
+        <Link className="mb-2 text-grayBlack text-2xl underline" href="/signup">SIGN IN</Link>
+        <Link href="/board" className="text-grayBlack underline">entrée visiteurs</Link>
         </div>
+        
       </section>
+      
       
     </main>
   );
