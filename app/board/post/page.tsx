@@ -37,7 +37,7 @@ async function getPosts() {
           {
             (posts).map((post) => {
               return (
-                <Link key={post.id} href={`https://catzami.vercel.app/board/post/${post.id}`}>
+                <Link key={post.id} href={`https://catzami-one.vercel.app/board/post/${post.id}`}>
                 <CardPost
                 key = {post.id}
                 title = {post.title}

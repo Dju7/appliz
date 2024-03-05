@@ -22,7 +22,7 @@ export default function AddPost() {
       console.log('Valeurs des champs avant envoi :', { title, content });
   
     try {
-      const response = await fetch("https://catzami.vercel.app/api/posts", {
+      const response = await fetch("https://catzami-one.vercel.app/api/posts", {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'

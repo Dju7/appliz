@@ -14,7 +14,7 @@ async function USer() {
   let data = null;
 
   try {
-    const response = await fetch('https://catzami.vercel.app/api/user/getUsers', {cache: 'no-store'});
+    const response = await fetch('https://catzami-one.vercel.app/api/user/getUsers', {cache: 'no-store'});
     if (response.ok) {
      data = await response.json();
     } else {
