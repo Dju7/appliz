@@ -1,7 +1,8 @@
 import { authOptions } from '@/lib/auth'
 import { getServerSession } from 'next-auth'
 import React from 'react'
-import { TfiThemifyFaviconAlt } from "react-icons/tfi";
+import Image from 'next/image'
+
 
 
 
@@ -16,11 +17,11 @@ async function Welcome() {
   return (
     <div className='flex flex-col h-full w-full items-center mt-10 gap-4 text-secondary'>
         
-    <p className='text-2xl lg:text-4xl 3xl:text-5xl text-scondary border p-2 bg-primary '> {totalDate}</p>
+    <p className='text-2xl lg:text-4xl 3xl:text-5xl text-scondary border p-2 bg-primary mt-4 '> {totalDate}</p>
       <h3 className='text-xl xl:text-4xl 3xl:text-5xl text- mt-6 font-welcome animate-pulse'>~ B I E N V E N U E ~</h3>
-      <div className='mt-6 flex justify-center items-center gap-10'>
-      <p className='text-2xl lg:text-4xl 3xl:text-5xl mt-16'>{session?.user.username || "Visitor"}</p>
-      <TfiThemifyFaviconAlt className=' text-6xl lg:text-9xl 3xl:text-[20rem]' />
+      <div className='flex 3xl:flex-col 3xl:mt-8 justify-center items-center gap-6 w-full p-0'>
+      <p className='text-2xl lg:text-4xl 3xl:text-5xl'>{session?.user.username || "Visitor"}</p>
+      <Image src='/cats.png' alt='chat' height={200} width={200} />
       </div>
       
     </div>

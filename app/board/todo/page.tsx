@@ -9,7 +9,7 @@ function Todo() {
         <div className='w-full h-20'>
           <h1 className='text-6xl mt-6'>TODO LIST</h1>
         </div>
-        <div className='w-full flex justify-center items-center gap-6 '>
+        <div className='ml-2 w-[97%] h-[90%] flex justify-center items-center gap-6 '>
           <TodoElement/>
           <TodoElement1/>
         </div>

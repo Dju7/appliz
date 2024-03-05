@@ -36,9 +36,9 @@ export default function Home() {
       <Image src="/cat.png" alt="image de chat" height={500} width={500} />
       <section className=" w-[30%] h-[60%] bg-cloud flex flex-col lg:flex-row justify-center items-center rounded-full overflow-hidden">  
         <div className="h-[50%] lg:h-full w-full lg:w-[70%] flex flex-col justify-center items-center">
-        <h2 className="text-3xl text-grayBlack font-bold mt-4">CATZAMI</h2>
+        <h2 className="text-3xl text-grayBlack font-bold mt-4">CONNECTION</h2>
         {error && (
-                <p className="text-alert text-center rounded-xl">{error}</p>
+                <p className="mt-4 text-alert text-center rounded-xl">{error}</p>
               )}
         <form 
         className="flex flex-col justify-center items-center gap-4 w-full h-[80%] "

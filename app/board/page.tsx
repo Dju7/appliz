@@ -59,7 +59,7 @@ export default async function Board() {
 
         </div>
         </div>
-        <div className='h-full 3xl:h-[1250px] w-[60%] flex flex-col items-center overflow-scoll border border-secondary bg-grayBlack/70 p-4 rounded-xl'>
+        <div className='h-full w-[60%] flex flex-col items-center overflow-scoll border border-secondary bg-grayBlack/70 p-4 rounded-xl'>
           <h2 className='text-secondary text-3xl mb-2'>~ DAILY NEWS ~</h2>
           <article className=' h-auto grid grid-cols-1 xl:grid-cols-2  gap-4 3xl:gap-8 overflow-auto 3xl:mt-10'>
         {Array.isArray(NewsData?.data)  ? (

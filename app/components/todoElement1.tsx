@@ -42,7 +42,7 @@ function TodoElement1() {
   
   
     return (
-      <section className='w-[50%] h-[800px] 3xl:h-[1300px] flex justify-center items-center mt-4'>
+      <section className='w-[50%] h-full flex justify-center items-center mt-4'>
        
         <div className=' w-full h-[95%] bg-grayBlack shadow-2xl rounded-xl border border-secondary'>
         
