@@ -68,7 +68,7 @@ export default function Home() {
           />
           <button type="submit" className="mt-8 h-12 w-36 text-primary font-bold rounded-xl bg-secondary hover:bg-grayBlack hover:text-cloud ">SE CONNECTER</button>
         </form>
-        <Link className="mb-2 text-grayBlack text-2xl underline" href="/signup">SIGN IN</Link>
+        <Link className="mb-2 text-grayBlack text-2xl underline" href="/signup">SIGN UP</Link>
         <Link href="/board" className="text-grayBlack underline">entrée visiteurs</Link>
         </div>
         

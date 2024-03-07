@@ -16,7 +16,7 @@ function Signup() {
   const createUser = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log('Data', data);
-    const response = await fetch('../api/user', {
+    const response = await fetch('https://catzami-peach.vercel.app/api/user', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -66,7 +66,7 @@ function Signup() {
                 Choose password
               </label>
               <input 
-              className="w-full text-primary p-1 bg-secondary"
+              className="w-full text-primary p-1 bg-cloud"
               type="password"
               id="password"
               name="password"
