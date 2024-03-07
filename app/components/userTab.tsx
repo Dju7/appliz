@@ -13,7 +13,7 @@ interface TabUserProps {
 
 export default async function TabUser(props: TabUserProps) {
     const session = await getServerSession(authOptions)
-    const placeholderImage = `https://api.dicebear.com/7.x/avataaars/svg?seed=${session?.user.email}`
+    const placeholderImage = `https://api.dicebear.com/7.x/avataaars/svg?seed=${props?.email}`
 
     return (
         <div className="flex bg-grayBlack h-16 w-[90%] p-4 rounded-xl">
