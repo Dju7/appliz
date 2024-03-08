@@ -25,8 +25,8 @@ async function USer() {
   }
 
   const TabOfUsers = data && data.length > 0
-    ? data.map((user: UserData, index: number) => (
-      <li className="list-none" key={index}><TabUser id={user.id} username={user.username} email={user.email} posts={user.posts}/></li>
+    ? data.map((user: UserData) => (
+      <li className="list-none" key={user.id}><TabUser id={user.id} username={user.username} email={user.email} posts={user.posts}/></li>
     ))
     : null;
 
